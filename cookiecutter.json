@@ -3,7 +3,7 @@
 	"email": "jon.snow@inria.fr",
 	"github_username": "oar-team",
 	"project_name": "Python OAR TV",
-    "repo_name": "python-oar-tv",
+	"repo_name": "python-oar-tv",
 	"package_name": "oar_tv",
 	"project_short_description": "Python OAR Project contains all the boilerplate you need to create a Python package.",
 	"version": "0.1.0"
