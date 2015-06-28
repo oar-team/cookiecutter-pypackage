@@ -2,11 +2,23 @@
 Installation
 ============
 
-At the command line::
+Requirements:
+  - python >= 2.7
 
-    $ easy_install {{ cookiecutter.repo_name }}
+You can install, upgrade, uninstall {{ cookiecutter.repo_name }} with these commands::
 
-Or, if you have virtualenvwrapper installed::
+  $ pip install [--user] {{ cookiecutter.repo_name }}
+  $ pip install [--user] --upgrade {{ cookiecutter.repo_name }}
+  $ pip uninstall {{ cookiecutter.repo_name }}
 
-    $ mkvirtualenv {{ cookiecutter.repo_name }}
-    $ pip install {{ cookiecutter.repo_name }}
+Or from git (last development version)::
+
+  $ pip install git+https://github.com/oar-team/{{ cookiecutter.repo_name }}.git
+
+Or if you already pulled the sources::
+
+  $ pip install path/to/sources
+
+Or if you don't have pip::
+
+  $ easy_install {{ cookiecutter.repo_name }}
