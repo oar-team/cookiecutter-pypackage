@@ -41,3 +41,9 @@ output/*/index.html
 
 # Sphinx
 docs/_build
+
+# Oar-docker
+.oardocker
+
+# Vagrant
+.vagrant
