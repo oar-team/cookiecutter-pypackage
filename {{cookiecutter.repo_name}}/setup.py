@@ -15,7 +15,7 @@ def read(fname):
         return fd.read()
 
 readme = read('README.rst')
-history = read('HISTORY.rst').replace('.. :changelog:', '')
+changelog = read('CHANGES.rst').replace('.. :changelog:', '')
 
 requirements = [
     # TODO: put package requirements here
@@ -41,7 +41,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     description="{{ cookiecutter.project_short_description }}",
-    long_description=readme + '\n\n' + history,
+    long_description=readme + '\n\n' + changelog,
     keywords='{{ cookiecutter.repo_name }}',
     license='BSD',
     classifiers=[
