@@ -60,7 +60,7 @@ copyright = u'{{ cookiecutter.year }}, {{ cookiecutter.full_name }}'
 # the built documents.
 #
 version_file = os.path.join(HERE, os.pardir,
-                            'oar_tv', '__init__.py')
+                            '{{ cookiecutter.package_name }}', '__init__.py')
 
 release = re.search("__version__ = '([^']+)'",
                     open(version_file).read().strip()).group(1)
