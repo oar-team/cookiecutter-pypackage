@@ -13,7 +13,7 @@ You can install, upgrade, uninstall {{ cookiecutter.repo_name }} with these comm
 
 Or from git (last development version)::
 
-  $ pip install git+https://github.com/oar-team/{{ cookiecutter.repo_name }}.git
+  $ pip install git+https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}.git
 
 Or if you already pulled the sources::
 

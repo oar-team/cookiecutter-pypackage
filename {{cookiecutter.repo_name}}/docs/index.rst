@@ -16,7 +16,7 @@ Contents:
    usage
    contributing
    authors
-   history
+   changes
 
 Indices and tables
 ==================

@@ -59,11 +59,12 @@ test:  ## Run tests quickly with the default Python
 testall:  ## Run tests on every Python version with tox
 	tox
 
-ci:  ## Run all tests and get junitxml report for CI (Travis, Jenkins...)
-	py.test --junitxml=junit.xml
-
 coverage: ## Check code coverage quickly with the default Python
-	py.test --verbose --cov-report term --cov-report html --cov={{ cookiecutter.package_name }} || true
+	coverage erase
+	tox $(TOX)
+	coverage combine
+	coverage report --include=* -m
+	coverage html
 	$(open) htmlcov/index.html
 
 lint:  ## Check style with flake8

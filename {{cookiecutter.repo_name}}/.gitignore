@@ -1,7 +1,8 @@
 *.py[cod]
-
-# C extensions
-*.so
+*~
+*.log
+*#
+**#
 
 # Packages
 *.egg
@@ -23,8 +24,11 @@ pip-log.txt
 
 # Unit test / coverage reports
 .coverage
+.coverage.*.*.*
+.cache
 .tox
-nosetests.xml
+*.tar.gz
+env
 htmlcov
 
 # Translations
