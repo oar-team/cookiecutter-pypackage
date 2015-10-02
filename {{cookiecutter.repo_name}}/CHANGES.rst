@@ -1,7 +1,7 @@
 .. :changelog:
 
-{{ cookiecutter.version | title }} changelog
-============================================
+{{ cookiecutter..project_name | title }} changelog
+==================================================
 
 Version {{ cookiecutter.version }}.dev0
 ------------------
